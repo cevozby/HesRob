@@ -24,3 +24,6 @@ Sayısal gelişimi destekler
 Hesap yapmak isteyenler
 Macera severler
 7-65 yaş arası
+
+
+[!First meeting](https://www.hizliresim.com/c5cg64q)
