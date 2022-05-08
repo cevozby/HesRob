@@ -27,3 +27,5 @@ Macera severler
 
 
 <a href="https://ibb.co/HgX8kL5"><img src="https://i.ibb.co/JkCJMWD/Sprint-1.jpg" alt="Sprint-1" border="0"></a>
+
+<a href="https://ibb.co/G9NqZRc"><img src="https://i.ibb.co/MfQmz7M/Sprint-1-2.jpg" alt="Sprint-1-2" border="0"></a>
