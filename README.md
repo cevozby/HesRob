@@ -26,4 +26,4 @@ Macera severler
 7-65 yaş arası
 
 
-[!First meeting](https://www.hizliresim.com/c5cg64q)
+<a href="https://ibb.co/HgX8kL5"><img src="https://i.ibb.co/JkCJMWD/Sprint-1.jpg" alt="Sprint-1" border="0"></a>
