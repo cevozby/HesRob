@@ -26,21 +26,27 @@ public class PlayerManagement : MonoBehaviour
         
     }
     
-     public void OnCollisionEnter2D(Collision2D collision)
+     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("smallDamage")) 
-        { playerHealth = playerHealth- 5; }
+        {
+            Debug.Log("Hasar ALındı");
+            player.Health = player.Health- 5;
+            healthBar.value = player.Health;
+            Debug.Log("Can: " + player.Health);
+        
+        }
         if (collision.gameObject.CompareTag("bigDamage")) 
-        { playerHealth = playerHealth- 10; }
+        { player.Health = player.Health- 10; }
     }
 
-
-    public void OnCollisionStay2D(Collision2D collision)
+    
+    private void OnTiggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("areaDamage")) 
-        { playerHealth = playerHealth - 2; }
+        { player.Health = player.Health - 2; }
         if (collision.gameObject.CompareTag("charger")) 
-        { playerHealth = playerHealth + 8; }
+        { player.Health = player.Health + 8; }
     }
     //Burada lav gibi bir şey olursa dokunduğu sürece can kaybedebilir.
     //Tekrar can toplasın diye şarj olduğu yerler eklenebilir diye düşündüm.
