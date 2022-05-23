@@ -62,13 +62,16 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 
 **Sprint Review:** Sprint hedeflerine ulaşılmıştır. <br/>
 
-*Alınan Kararlar :* <br/> Düşma robotunun yapılmasına karar verilmiştir. <br/>
+*Alınan Kararlar :* <br/>
+
+Düşma robotunun yapılmasına karar verilmiştir. <br/>
 
 Karakterin kişiselleştirilmesi bir sonraki sprinte aktarılmıştır. <br/> 
 
 *Sprint Review katılımcıları:* Yasemin Tavacıoğlu, Süleyman Cevdet Özbey, Beril Bilici, Müberra Yeşilyurt.
 
 **Sprint Retrospective:**
+
 <br/> *Neler İyi Gitti?:* <br/> 
 
 Görevler yapılırken hiç bir sorunla karşılaşmadık. <br/> 
