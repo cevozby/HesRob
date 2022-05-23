@@ -26,7 +26,7 @@ Macera severler <br/>
 7-65 yaş arası <br/>
 
 ## Product Backlog URL
-[Miro Backlog Board] (https://miro.com/app/board/uXjVO3gw_ic=/)
+[Miro Backlog Board](https://miro.com/app/board/uXjVO3gw_ic=/)
 
 # Sprint 1 
 
@@ -47,4 +47,15 @@ Macera severler <br/>
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: Sprint 2 Daily Scrum Chats https://docs.google.com/document/d/1SvZmeolLajoQsgSXziQ261NHC0fe5N_c/edit?usp=sharing&ouid=106953250793671784982&rtpof=true&sd=true 
+**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats](https://docs.google.com/document/d/1SvZmeolLajoQsgSXziQ261NHC0fe5N_c/edit?usp=sharing&ouid=106953250793671784982&rtpof=true&sd=true)
+
+**Sprint board update:** Sprint board screenshotları:  ![](https://github.com/cevozby/HesRob/blob/main/sprint2/board.jpg) ![](https://github.com/cevozby/HesRob/blob/main/sprint2/board2.jpg) ![](https://github.com/cevozby/HesRob/blob/main/sprint2/board3.jpg)
+
+**Ürün Durumu:** Ekran görüntüleri:  
+![](https://github.com/cevozby/HesRob/blob/main/sprint2/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-05-15%20at%2011.56.28.jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint2/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-05-15%20at%2015.40.17%20(1).jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint2/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-05-15%20at%2015.40.17.jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint2/%C3%BCr%C3%BCn%20fotograflar%C4%B1/hesap.jpg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint2/%C3%BCr%C3%BCn%20fotograflar%C4%B1/karakter.png)
+![](https://github.com/cevozby/HesRob/blob/main/sprint2/%C3%BCr%C3%BCn%20fotograflar%C4%B1/sahne.jpg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint2/%C3%BCr%C3%BCn%20fotograflar%C4%B1/%C3%BCr%C3%BCn%20tasar%C4%B1m%C4%B1.jpg)
