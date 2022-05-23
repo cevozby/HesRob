@@ -61,17 +61,28 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 ![](https://github.com/cevozby/HesRob/blob/main/sprint2/%C3%BCr%C3%BCn%20fotograflar%C4%B1/%C3%BCr%C3%BCn%20tasar%C4%B1m%C4%B1.jpg)
 
 **Sprint Review:** Sprint hedeflerine ulaşılmıştır. <br/>
-*Alınan Kararlar :* <br/> Düşma robotunun yapılmasına karar verilmiştir. <br/> 
+
+*Alınan Kararlar :* <br/> Düşma robotunun yapılmasına karar verilmiştir. <br/>
+
 Karakterin kişiselleştirilmesi bir sonraki sprinte aktarılmıştır. <br/> 
+
 *Sprint Review katılımcıları:* Yasemin Tavacıoğlu, Süleyman Cevdet Özbey, Beril Bilici, Müberra Yeşilyurt.
 
-**Sprint Retrospective:** *Neler İyi Gitti* <br/> 
+**Sprint Retrospective:**
+<br/> *Neler İyi Gitti?:* <br/> 
+
 Görevler yapılırken hiç bir sorunla karşılaşmadık. <br/> 
+
 Hedeflere ulaşıldı <br/> 
-*Ne Tür Sorunlar Yaşadık* <br/> 
+
+*Ne Tür Sorunlar Yaşadık?:* <br/> 
+
 Diğer işlerden dolayı projeyi yaparken sıkışıklık oldu <br/>
+
 Oyunla ilgili bazı yerler tam oturmadı <br/>
-*Geliştirilmesi veya sonraki sprintlerde dikkat edilmesi gereken konular neler?* <br/>
+
+*Geliştirilmesi veya sonraki sprintlerde dikkat edilmesi gereken konular neler?:* <br/>
+
 Oyunun tam oturmaması. Bunun için daha çok toplantı ile halledilmesi gerekiyor
 
 
