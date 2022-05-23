@@ -65,6 +65,13 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 Karakterin kişiselleştirilmesi bir sonraki sprinte aktarılmıştır. <br/> 
 *Sprint Review katılımcıları:* Yasemin Tavacıoğlu, Süleyman Cevdet Özbey, Beril Bilici, Müberra Yeşilyurt.
 
-**Sprint Retrospective:** 
+**Sprint Retrospective:** *Neler İyi Gitti* <br/> 
+Görevler yapılırken hiç bir sorunla karşılaşmadık. <br/> 
+Hedeflere ulaşıldı <br/> 
+*Ne Tür Sorunlar Yaşadık* <br/> 
+Diğer işlerden dolayı projeyi yaparken sıkışıklık oldu <br/>
+Oyunla ilgili bazı yerler tam oturmadı <br/>
+*Geliştirilmesi veya sonraki sprintlerde dikkat edilmesi gereken konular neler?* <br/>
+Oyunun tam oturmaması. Bunun için daha çok toplantı ile halledilmesi gerekiyor
 
 
