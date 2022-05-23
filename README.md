@@ -47,4 +47,4 @@ Macera severler <br/>
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: Sprint 2 Daily Scrum Chats https://github.com/cevozby/HesRob/blob/main/sprint2/DailyScrum.docx
+**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: Sprint 2 Daily Scrum Chats https://docs.google.com/document/d/1SvZmeolLajoQsgSXziQ261NHC0fe5N_c/edit?usp=sharing&ouid=106953250793671784982&rtpof=true&sd=true
