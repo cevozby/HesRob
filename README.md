@@ -25,6 +25,9 @@ Hesap yapmak isteyenler <br/>
 Macera severler <br/>
 7-65 yaş arası <br/>
 
+## Product Backlog URL
+[Miro Backlog Board] (https://miro.com/app/board/uXjVO3gw_ic=/)
+
 # Sprint 1 
 
 
@@ -44,4 +47,4 @@ Macera severler <br/>
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-**Daily Scrum:**
+**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: 
