@@ -8,6 +8,8 @@ public class PlayerManagement : MonoBehaviour
 {
     Robot player = new Robot(100, 10, 15);
 
+
+
     public Slider healthBar;
 
     // Start is called before the first frame update
