@@ -96,6 +96,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (operation.Equals("")) //baþka iþlem yapýlmadýysa bu tuþ çalýþýr
         {
         firstEntry = result;
+        result = 0;
         operation = "+";
         calculatorScreen.text = operation;
         }
@@ -119,6 +120,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (operation.Equals(""))
         {
         firstEntry = result;
+        result = 0;
         operation = "/";
         calculatorScreen.text = operation;
         }
@@ -130,6 +132,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (operation.Equals(""))
         {
         firstEntry = result;
+        result = 0;
         operation = "*";
         calculatorScreen.text = operation;
         }
@@ -174,19 +177,23 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         operation = "";
-        result = 0.0;
+       
     }
-    //eþittir tuþuna basýnca bu çalýþabilir
+    //eþittir tuþuna basýnca bu çalýþabilir. Eþittir yazdýðýmýz iþlemin sonucunu bulan tuþ.
 
+
+    //submit tuþuna basýnca çalýþabilir. Submit bulduðumuz sonucu istenen sonuçla karþýlaþtýran buton.
     public void writeInfo(double result)  //iþlem tamamlandýðýnda ekranda bilgilendirme yazýsý yazabilir
     {
         if(wantedResult == result)
         {
             calculatorScreen.text = "Ýþlemin doðru!";
+            result = 0.0;
         }
         else
         {
             calculatorScreen.text = "Tekrar dene!";
+            result = 0.0;
         }
     }
     
