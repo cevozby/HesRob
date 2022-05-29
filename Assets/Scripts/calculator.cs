@@ -156,23 +156,23 @@ public class NewBehaviourScript : MonoBehaviour
         {
             case "+":
                 result = firstEntry + result;
-                
+                calculatorScreen.text = result.ToString();
                 break;
             case"-":
                 result = firstEntry - result;
-                
+                calculatorScreen.text = result.ToString();
                 break;
             case "*":
                 result = firstEntry * result;
-                
+                calculatorScreen.text = result.ToString();
                 break;
             case "/":
                 result = firstEntry / result;
-                
+                calculatorScreen.text = result.ToString();
                 break;
             case "^1/2":
                 result = Math.Sqrt(result);
-                
+                calculatorScreen.text = result.ToString();
                 break;
         }
 
