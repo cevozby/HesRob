@@ -11,14 +11,15 @@ public class NewBehaviourScript : MonoBehaviour
     double result = 0.0;
     string operation = "";  //yaptýðýmýz iþlemin sembolü
     double wantedResult;  //bulunmasýný istediðimiz sonuç
-    static Text calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
-    int number;
+    Text calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
+    Boolean calculated = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
         calculatorScreen = GetComponent<Text>();
-        calculatorScreen.text = "Sonucu "+ wantedResult+" olan bir iþlem yap!";
+        calculatorScreen.text = "Sonucu "+ wantedResult +" olan bir iþlem yap!";
     }
 
     // Update is called once per frame
@@ -156,22 +157,27 @@ public class NewBehaviourScript : MonoBehaviour
         {
             case "+":
                 result = firstEntry + result;
+                calculated = true;  //en azýndan bir iþlem yaptýðýndan emin olmalýyýz, oyuncu sadece cevabý yazýp geçmemeli
                 calculatorScreen.text = result.ToString();
                 break;
             case"-":
                 result = firstEntry - result;
+                calculated = true;
                 calculatorScreen.text = result.ToString();
                 break;
             case "*":
                 result = firstEntry * result;
+                calculated = true;
                 calculatorScreen.text = result.ToString();
                 break;
             case "/":
                 result = firstEntry / result;
+                calculated = true;
                 calculatorScreen.text = result.ToString();
                 break;
             case "^1/2":
                 result = Math.Sqrt(result);
+                calculated = true;
                 calculatorScreen.text = result.ToString();
                 break;
         }
@@ -185,16 +191,24 @@ public class NewBehaviourScript : MonoBehaviour
     //submit tuþuna basýnca çalýþabilir. Submit bulduðumuz sonucu istenen sonuçla karþýlaþtýran buton.
     public void writeInfo(double result)  //iþlem tamamlandýðýnda ekranda bilgilendirme yazýsý yazabilir
     {
-        if(wantedResult == result)
+        if(calculated == true) //eðer oyuncu bir iþlem yaparak sonucu bulduysa bu sonucu karþýlaþtýrabilir (iþlem yapmadýysa bu buton çalýþmayacak)
         {
-            calculatorScreen.text = "Ýþlemin doðru!";
-            result = 0.0;
+            if (wantedResult == result)
+            {
+                calculatorScreen.text = "Ýþlemin doðru!";
+                result = 0.0;
+                calculated = false;
+
+            }
+            else
+            {
+                calculatorScreen.text = "Tekrar dene!";
+                result = 0.0;
+                calculated = false;
+            }
+
         }
-        else
-        {
-            calculatorScreen.text = "Tekrar dene!";
-            result = 0.0;
-        }
+        
     }
     
 }
