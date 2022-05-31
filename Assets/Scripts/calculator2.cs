@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 //iþlem önceliðine göre çalýþan bir hesap makinesi. Her tuþa bastýðýnda tuþta yazaný ekranda gösteriyor.
@@ -10,23 +11,23 @@ public class calculator2 : MonoBehaviour
 {
 
 
-     double firstEntry=0; //toplama çýkarma çarpma ve bölmede ilk yazýlan sayý
-     double secondEntry=0;
-     double thirdEntry=0;
-     string firstOperation = "";
-     string secondOperation = "";
-     string thirdOperation = "";
-     int enteredNumber = 1;
-     double wantedResult = 2;  //bulunmasýný istediðimiz sonuç
-    [SerializeField] Text calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
-    Boolean written = false; //first second veya third entry için rakam girilmiþse written true olacak
+     static double firstEntry=0; //toplama çýkarma çarpma ve bölmede ilk yazýlan sayý
+     static double secondEntry=0;
+     static double thirdEntry=0;
+     static string firstOperation = "";
+     static string secondOperation = "";
+     static string thirdOperation = "";
+     static int enteredNumber = 1;
+     static double wantedResult = 2;  //bulunmasýný istediðimiz sonuç
+    [SerializeField] TextMeshProUGUI calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
+    static Boolean written = false; //first second veya third entry için rakam girilmiþse written true olacak
                              // + - * / ya basýnca tekrar sayý giriþi olmasý gerektiði için false a dönecek
-    Boolean screenText = true;
+    static Boolean screenText = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        calculatorScreen = GameObject.Find("hesap").GetComponent<Text>();
+        //calculatorScreen = GameObject.Find("hesap").GetComponent<TextMeshProUGUI>();
         calculatorScreen.text = "Sonucu 2 olan bir iþlem yap!";
     }
 
@@ -147,14 +148,14 @@ public class calculator2 : MonoBehaviour
                 calculatorScreen.text += firstOperation;
             }
 
-            if (enteredNumber == 2)
+            else  if (enteredNumber == 2)
             {
                 secondOperation = "+";
                 enteredNumber = 3;
                 calculatorScreen.text += secondOperation;
 
             }
-            if (enteredNumber == 3)
+            else if (enteredNumber == 3)
             {
                 thirdOperation = "+";
                 calculatorScreen.text += thirdOperation;
@@ -178,14 +179,14 @@ public class calculator2 : MonoBehaviour
                     calculatorScreen.text += firstOperation;
             }
 
-            if (enteredNumber == 2)
+            else if (enteredNumber == 2)
             {
                     secondOperation = "-";
                     enteredNumber = 3;
                     calculatorScreen.text += secondOperation;
                 
             }
-            if (enteredNumber == 3)
+            else if (enteredNumber == 3)
             {
                     thirdOperation = "-";
                     calculatorScreen.text += thirdOperation;
@@ -239,7 +240,7 @@ public class calculator2 : MonoBehaviour
 
         }
 
-        if (firstOperation.Equals("-"))
+        else if (firstOperation.Equals("-"))
         {
             switch (secondOperation)
             {
@@ -276,7 +277,7 @@ public class calculator2 : MonoBehaviour
 
         }
 
-        if (firstOperation.Equals("/"))
+       else  if (firstOperation.Equals("/"))
         {
             firstEntry /= secondEntry;
             secondEntry = thirdEntry;
@@ -287,7 +288,7 @@ public class calculator2 : MonoBehaviour
 
         }
 
-        if (firstOperation.Equals("*"))
+        else if (firstOperation.Equals("*"))
         {
             firstEntry *= secondEntry;
             secondEntry = thirdEntry;
@@ -315,14 +316,14 @@ public class calculator2 : MonoBehaviour
                 calculatorScreen.text += firstOperation;
             }
 
-            if (enteredNumber == 2)
+            else if (enteredNumber == 2)
             {
                 secondOperation = "/";
                 enteredNumber = 3;
                 calculatorScreen.text += secondOperation;
 
             }
-            if (enteredNumber == 3)
+            else if (enteredNumber == 3)
             {
                 thirdOperation = "/";
                 calculatorScreen.text += thirdOperation;
@@ -346,14 +347,14 @@ public class calculator2 : MonoBehaviour
                 calculatorScreen.text += firstOperation;
             }
 
-            if (enteredNumber == 2)
+            else if (enteredNumber == 2)
             {
                 secondOperation = "*";
                 enteredNumber = 3;
                 calculatorScreen.text += secondOperation;
 
             }
-            if (enteredNumber == 3)
+            else if (enteredNumber == 3)
             {
                 thirdOperation = "*";
                 calculatorScreen.text += thirdOperation;
