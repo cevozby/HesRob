@@ -10,15 +10,15 @@ public class calculator2 : MonoBehaviour
 {
 
 
-    double firstEntry=0; //toplama çýkarma çarpma ve bölmede ilk yazýlan sayý
-    double secondEntry=0;
-    double thirdEntry=0;
-    string firstOperation = "";
-    string secondOperation = "";
-    string thirdOperation = "";
-    int enteredNumber = 1;
-    double wantedResult;  //bulunmasýný istediðimiz sonuç
-    Text calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
+     double firstEntry=0; //toplama çýkarma çarpma ve bölmede ilk yazýlan sayý
+     double secondEntry=0;
+     double thirdEntry=0;
+     string firstOperation = "";
+     string secondOperation = "";
+     string thirdOperation = "";
+     int enteredNumber = 1;
+     double wantedResult = 2;  //bulunmasýný istediðimiz sonuç
+    [SerializeField] Text calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
     Boolean written = false; //first second veya third entry için rakam girilmiþse written true olacak
                              // + - * / ya basýnca tekrar sayý giriþi olmasý gerektiði için false a dönecek
     Boolean screenText = true;
@@ -26,8 +26,8 @@ public class calculator2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        calculatorScreen = GetComponent<Text>();
-        calculatorScreen.text = "Sonucu " + wantedResult + " olan bir iþlem yap!";
+        calculatorScreen = GameObject.Find("hesap").GetComponent<Text>();
+        calculatorScreen.text = "Sonucu 2 olan bir iþlem yap!";
     }
 
     // Update is called once per frame
