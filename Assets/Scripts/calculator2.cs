@@ -159,7 +159,7 @@ public class calculator2 : MonoBehaviour
             {
                 thirdOperation = "+";
                 calculatorScreen.text += thirdOperation;
-
+                doTheMath();
             }
         }
 
