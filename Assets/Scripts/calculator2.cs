@@ -10,7 +10,7 @@ using TMPro;
 public class calculator2 : MonoBehaviour
 {
 
-
+    System.Random rnd = new System.Random();
      static double firstEntry=0; //toplama çýkarma çarpma ve bölmede ilk yazýlan sayý
      static double secondEntry=0;
      static double thirdEntry=0;
@@ -27,8 +27,9 @@ public class calculator2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //calculatorScreen = GameObject.Find("hesap").GetComponent<TextMeshProUGUI>();
-        calculatorScreen.text = "Sonucu 2 olan bir iþlem yap!";
+        
+        wantedResult = rnd.Next(1,20); //her seviyede 1 ile 20 arasý rastgele bir sayýyý bulmamýzý isteyecek
+        calculatorScreen.text = "Sonucu "+ wantedResult+" olan bir iþlem yap!";
     }
 
     // Update is called once per frame
