@@ -450,5 +450,17 @@ public class calculator2 : MonoBehaviour
         }
      
     }
+
+    public void silme()
+    {
+        firstEntry = 0;
+        secondEntry = 0;
+        thirdEntry = 0;
+        firstOperation = "";
+        secondOperation = "";
+        thirdOperation = "";
+        enteredNumber = 1;
+        calculatorScreen.text = "";
+    }
     
 }
