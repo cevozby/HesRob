@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 23870385}
   - component: {fileID: 23870386}
+  - component: {fileID: 23870387}
   m_Layer: 0
   m_Name: "1.kap\u0131_BozukAsans\xF6r_zemin"
   m_TagString: Untagged
@@ -291,6 +292,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &23870387
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23870384}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &75111571
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +496,8 @@ GameObject:
   m_Component:
   - component: {fileID: 214506705}
   - component: {fileID: 214506706}
+  - component: {fileID: 214506708}
+  - component: {fileID: 214506707}
   m_Layer: 0
   m_Name: "asans\xF6r_zemin (6)"
   m_TagString: Untagged
@@ -484,7 +513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214506704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.61, y: -2.57, z: 0}
+  m_LocalPosition: {x: 28.6, y: -2.6, z: 0}
   m_LocalScale: {x: 0.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -543,6 +572,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &214506707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214506704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70a82e1e90dbcc43aca8bbf1e22e91b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endPos: {x: 28.6, y: 1.3, z: 0}
+  player: {fileID: 2146567514}
+--- !u!61 &214506708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214506704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &276469573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,6 +1892,8 @@ GameObject:
   m_Component:
   - component: {fileID: 713380553}
   - component: {fileID: 713380554}
+  - component: {fileID: 713380556}
+  - component: {fileID: 713380555}
   m_Layer: 0
   m_Name: "asans\xF6r_zemin"
   m_TagString: Untagged
@@ -1838,7 +1909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713380552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.25, y: 1.28, z: 0}
+  m_LocalPosition: {x: -4.25, y: 1.3, z: 0}
   m_LocalScale: {x: 0.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1897,6 +1968,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &713380555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713380552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70a82e1e90dbcc43aca8bbf1e22e91b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endPos: {x: -4.25, y: -2.6, z: 0}
+  player: {fileID: 2146567514}
+--- !u!61 &713380556
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713380552}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &729658821
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2323,8 @@ GameObject:
   m_Component:
   - component: {fileID: 841477826}
   - component: {fileID: 841477827}
+  - component: {fileID: 841477829}
+  - component: {fileID: 841477828}
   m_Layer: 0
   m_Name: "asans\xF6r_zemin (3)"
   m_TagString: Untagged
@@ -2227,7 +2340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841477825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.24, y: -6.5, z: 0}
+  m_LocalPosition: {x: 13.25, y: -6.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2286,6 +2399,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &841477828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841477825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70a82e1e90dbcc43aca8bbf1e22e91b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endPos: {x: 13.25, y: -2.6, z: 0}
+  player: {fileID: 2146567514}
+--- !u!61 &841477829
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841477825}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &853653575
 GameObject:
   m_ObjectHideFlags: 0
@@ -3807,6 +3960,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1340213247}
   - component: {fileID: 1340213248}
+  - component: {fileID: 1340213250}
+  - component: {fileID: 1340213249}
   m_Layer: 0
   m_Name: "asans\xF6r_zemin (1)"
   m_TagString: Untagged
@@ -3822,7 +3977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340213246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.49, y: -2.78, z: 0}
+  m_LocalPosition: {x: -7.5, y: -2.6, z: 0}
   m_LocalScale: {x: 0.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3881,6 +4036,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1340213249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340213246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70a82e1e90dbcc43aca8bbf1e22e91b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endPos: {x: -7.5, y: -6.5, z: 0}
+  player: {fileID: 2146567514}
+--- !u!61 &1340213250
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340213246}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &1346207085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,6 +4321,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1391918741}
   - component: {fileID: 1391918742}
+  - component: {fileID: 1391918744}
+  - component: {fileID: 1391918743}
   m_Layer: 0
   m_Name: "asans\xF6r_zemin (4)"
   m_TagString: Untagged
@@ -4141,7 +4338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391918740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.11, y: -2.5, z: 0}
+  m_LocalPosition: {x: 19.2, y: -2.6, z: 0}
   m_LocalScale: {x: 0.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4200,6 +4397,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1391918743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391918740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70a82e1e90dbcc43aca8bbf1e22e91b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endPos: {x: 19.2, y: 1.2, z: 0}
+  player: {fileID: 2146567514}
+--- !u!61 &1391918744
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391918740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &1420300032
 GameObject:
   m_ObjectHideFlags: 0
@@ -5263,6 +5500,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1836748220}
   - component: {fileID: 1836748221}
+  - component: {fileID: 1836748223}
+  - component: {fileID: 1836748222}
   m_Layer: 0
   m_Name: "asans\xF6r_zemin (5)"
   m_TagString: Untagged
@@ -5278,7 +5517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836748219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.11, y: -2.63, z: 0}
+  m_LocalPosition: {x: 23.15, y: -2.6, z: 0}
   m_LocalScale: {x: 0.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5337,6 +5576,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1836748222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836748219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70a82e1e90dbcc43aca8bbf1e22e91b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endPos: {x: 23.15, y: -6.5, z: 0}
+  player: {fileID: 2146567514}
+--- !u!61 &1836748223
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836748219}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &1864144556
 GameObject:
   m_ObjectHideFlags: 0
@@ -5670,6 +5949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981363550}
   - component: {fileID: 1981363551}
+  - component: {fileID: 1981363552}
   m_Layer: 0
   m_Name: "2.kap\u0131_Kapal\u0131Asans\xF6r_zemin"
   m_TagString: Untagged
@@ -5744,6 +6024,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1981363552
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981363549}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &1993100233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5754,6 +6060,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1993100234}
   - component: {fileID: 1993100235}
+  - component: {fileID: 1993100237}
+  - component: {fileID: 1993100236}
   m_Layer: 0
   m_Name: "asans\xF6r_zemin (2)"
   m_TagString: Untagged
@@ -5769,7 +6077,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993100233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.73, y: -2.47, z: 0}
+  m_LocalPosition: {x: 5.75, y: -2.6, z: 0}
   m_LocalScale: {x: 0.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5828,6 +6136,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1993100236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993100233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70a82e1e90dbcc43aca8bbf1e22e91b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endPos: {x: 5.75, y: 1.3, z: 0}
+  player: {fileID: 2146567514}
+--- !u!61 &1993100237
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993100233}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 0.75}
+    newSize: {x: 2.08, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.08, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &1994621564
 GameObject:
   m_ObjectHideFlags: 0
@@ -6329,6 +6677,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &2146567514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3078357642415290839, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
+  m_PrefabInstance: {fileID: 3078357641253605277}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3078357641253605277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6418,6 +6771,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3078357642415290843, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078357642415290843, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
