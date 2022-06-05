@@ -7,12 +7,14 @@ public class ButtonManager : MonoBehaviour
 {
     int index;
     [SerializeField] GameObject pauseMenu;
-   
+    [SerializeField] GameObject gameOver;
+
 
     private void Start()
     {
         index = SceneManager.GetActiveScene().buildIndex;
         pauseMenu.SetActive(false);
+        
     }
 
 
