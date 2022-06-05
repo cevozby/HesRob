@@ -9,7 +9,7 @@ using TMPro;
 //iþlem önceliðine göre çalýþan bir hesap makinesi. Her tuþa bastýðýnda tuþta yazaný ekranda gösteriyor.
 public class calculator2 : MonoBehaviour
 {
-
+    static int hesapSkoru = 0;
     System.Random rnd = new System.Random();
      static double firstEntry=0; //toplama çýkarma çarpma ve bölmede ilk yazýlan sayý
      static double secondEntry=0;
@@ -19,6 +19,7 @@ public class calculator2 : MonoBehaviour
      static string thirdOperation = "";
      static int enteredNumber = 1;
      static double wantedResult = 2;  //bulunmasýný istediðimiz sonuç
+    [SerializeField] TextMeshProUGUI infoScreen;
     [SerializeField] TextMeshProUGUI calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
     static Boolean written = false; //first second veya third entry için rakam girilmiþse written true olacak
                              // + - * / ya basýnca tekrar sayý giriþi olmasý gerektiði için false a dönecek
@@ -29,7 +30,8 @@ public class calculator2 : MonoBehaviour
     {
         
         wantedResult = rnd.Next(1,20); //her seviyede 1 ile 20 arasý rastgele bir sayýyý bulmamýzý isteyecek
-        calculatorScreen.text = "Sonucu "+ wantedResult+" olan bir iþlem yap!";
+        infoScreen.text = "Sonucu "+ wantedResult+" olan bir iþlem yap!";
+        calculatorScreen.text = "";
     }
 
     // Update is called once per frame
@@ -113,11 +115,7 @@ public class calculator2 : MonoBehaviour
 
         if(enteredNumber == 1)
         {
-            if(screenText)
-            {
-                calculatorScreen.text = "";
-                screenText = false;
-            }  
+             
             firstEntry *= 10;
             firstEntry += a;
         }
@@ -141,6 +139,7 @@ public class calculator2 : MonoBehaviour
     {
         if (written == true)
         {
+            hesapSkoru += 5;
             written = false;
             if (enteredNumber == 1)
             {
@@ -172,6 +171,7 @@ public class calculator2 : MonoBehaviour
     {
         if (written == true)
         {
+            hesapSkoru += 5;
             written = false;
             if (enteredNumber == 1)
             {
@@ -309,6 +309,7 @@ public class calculator2 : MonoBehaviour
     {
         if (written == true)
         {
+            hesapSkoru += 5;
             written = false;
             if (enteredNumber == 1)
             {
@@ -338,6 +339,7 @@ public class calculator2 : MonoBehaviour
     //çarpma tuþu
     public void multiplication()
     {
+        hesapSkoru += 5;
         if (written == true)
         {
             written = false;
@@ -421,8 +423,8 @@ public class calculator2 : MonoBehaviour
 
             if (wantedResult.Equals(firstEntry))
             {
-                calculatorScreen.text = "Ýþlemin doðru!";
-                screenText = true;
+                infoScreen.text = "Ýþlemin doðru! Skor: "+ hesapSkoru;
+                
                 firstEntry = 0; 
                 secondEntry = 0;
                 thirdEntry = 0;
@@ -430,13 +432,14 @@ public class calculator2 : MonoBehaviour
                 secondOperation = "";
                 thirdOperation = "";
                 enteredNumber = 1;
+                silme();
 
 
             }
             else
             {
-                calculatorScreen.text = "Bulduðun sonuç "+firstEntry+". Tekrar dene!";
-                screenText = true;
+                infoScreen.text = "Bulduðun sonuç "+firstEntry+". Tekrar dene!";
+                
                 firstEntry = 0; 
                 secondEntry = 0;
                 thirdEntry = 0;
@@ -444,6 +447,8 @@ public class calculator2 : MonoBehaviour
                 secondOperation = "";
                 thirdOperation = "";
                 enteredNumber = 1;
+                silme();
+                hesapSkoru = 0;
 
 
             }
