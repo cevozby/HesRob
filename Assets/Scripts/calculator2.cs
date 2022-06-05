@@ -19,6 +19,7 @@ public class calculator2 : MonoBehaviour
      static string thirdOperation = "";
      static int enteredNumber = 1;
      static double wantedResult = 2;  //bulunmasýný istediðimiz sonuç
+    [SerializeField] calculator2 thisScene;
     [SerializeField] TextMeshProUGUI infoScreen;
     [SerializeField] TextMeshProUGUI calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
     static Boolean written = false; //first second veya third entry için rakam girilmiþse written true olacak
@@ -466,6 +467,7 @@ public class calculator2 : MonoBehaviour
         thirdOperation = "";
         enteredNumber = 1;
         calculatorScreen.text = "";
+        written = false;
     }
     
 }
