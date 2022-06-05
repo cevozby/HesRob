@@ -18,21 +18,23 @@ public class calculator2 : MonoBehaviour
      static string secondOperation = "";
      static string thirdOperation = "";
      static int enteredNumber = 1;
-     static double wantedResult = 2;  //bulunmasýný istediðimiz sonuç
-    [SerializeField] calculator2 thisScene;
+     static double wantedResult;  //bulunmasýný istediðimiz sonuç
+    
     [SerializeField] TextMeshProUGUI infoScreen;
     [SerializeField] TextMeshProUGUI calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
+    [SerializeField] GameObject finish;
+
     static Boolean written = false; //first second veya third entry için rakam girilmiþse written true olacak
                              // + - * / ya basýnca tekrar sayý giriþi olmasý gerektiði için false a dönecek
-    static Boolean screenText = true;
+   
 
     // Start is called before the first frame update
     void Start()
     {
-        
         wantedResult = rnd.Next(1,20); //her seviyede 1 ile 20 arasý rastgele bir sayýyý bulmamýzý isteyecek
         infoScreen.text = "Sonucu "+ wantedResult+" olan bir iþlem yap!";
         calculatorScreen.text = "";
+        finish.SetActive(false);
     }
 
     // Update is called once per frame
@@ -434,6 +436,8 @@ public class calculator2 : MonoBehaviour
                 thirdOperation = "";
                 enteredNumber = 1;
                 silme();
+                finish.SetActive(true);
+
 
 
             }
