@@ -9,7 +9,7 @@ public class PlayerManagement : MonoBehaviour
     Robot player = new Robot(100, 10, 15);
 
 
-
+    [SerializeField] GameObject gameOver;
     public Slider healthBar;
 
     // Start is called before the first frame update
@@ -25,7 +25,10 @@ public class PlayerManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (player.Health == 0)
+        {
+            gameOver.SetActive(true);
+        }
     }
     
      private void OnCollisionEnter2D(Collision2D collision)
@@ -43,7 +46,7 @@ public class PlayerManagement : MonoBehaviour
     }
 
     
-    private void OnTiggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("areaDamage")) 
         { player.Health = player.Health - 2; }
