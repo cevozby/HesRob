@@ -7,11 +7,13 @@ public class SecondKey : MonoBehaviour
     public GameObject key;
     bool fCheck;
     public static bool keyControl;
+    [SerializeField] GameObject FTusu;
 
     // Start is called before the first frame update
     void Start()
     {
         keyControl = false;
+        FTusu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class SecondKey : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && !keyControl)
         {
+            FTusu.SetActive(true);
             fCheck = true;
         }
     }
@@ -44,6 +47,7 @@ public class SecondKey : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            FTusu.SetActive(false);
             fCheck = false;
         }
     }

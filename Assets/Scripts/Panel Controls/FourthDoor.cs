@@ -41,18 +41,20 @@ public class FourthDoor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        FTusu.SetActive(true);
+        
         if (collision.gameObject.CompareTag("Player"))
         {
+            FTusu.SetActive(true);
             fCheck = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        FTusu.SetActive(false);
+        
         if (collision.gameObject.CompareTag("Player"))
         {
+            FTusu.SetActive(false);
             fCheck = false;
         }
     }

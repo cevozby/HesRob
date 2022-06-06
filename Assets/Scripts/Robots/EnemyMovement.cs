@@ -56,20 +56,18 @@ public class EnemyMovement : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            Debug.Log("öldüm");
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             health -= 30;
             Debug.Log("Hasar verdin");
             Destroy(collision.gameObject);
-            if(health == 0)
-            {
-                Destroy(this);
-            }
+            
             
         }
     }

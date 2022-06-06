@@ -7,7 +7,7 @@ using TMPro;
 public class PlayerManagement : MonoBehaviour
 {
     Robot player = new Robot(100, 10, 15);
-    int health;
+    float health;
 
     [SerializeField] GameObject gameOver;
     public Slider healthBar;
@@ -24,7 +24,8 @@ public class PlayerManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health == 0)
+        healthBar.value = health;
+        if (health <= 0)
         {
             gameOver.SetActive(true);
         }
@@ -49,16 +50,32 @@ public class PlayerManagement : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("areaDamage")) 
-        { player.Health = player.Health - 2; }
-        if (collision.gameObject.CompareTag("charger")) 
-        { player.Health = player.Health + 8; }
+        if (collision.gameObject.CompareTag("areaDamage"))
+        { health = player.Health - 0.4f; }
+        if (collision.gameObject.CompareTag("charger"))
+        { health = player.Health + 2f; }
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            health -= 15;
+            health -= 0.2f;
             Debug.Log("Hasar alındı");
         }
+
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("areaDamage"))
+        { health = player.Health - 0.4f; }
+        if (collision.gameObject.CompareTag("charger"))
+        { health = player.Health + 2f; }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            health -= 0.2f;
+            Debug.Log("Hasar alındı");
+        }
+
     }
     //Burada lav gibi bir şey olursa dokunduğu sürece can kaybedebilir.
     //Tekrar can toplasın diye şarj olduğu yerler eklenebilir diye düşündüm.
