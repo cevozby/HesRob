@@ -7,11 +7,12 @@ public class FourthDoor : MonoBehaviour
     public GameObject switchPanel;
     public GameObject lav;
     bool fCheck, switchControl;
+    [SerializeField] GameObject FTusu;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        FTusu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,6 +41,7 @@ public class FourthDoor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        FTusu.SetActive(true);
         if (collision.gameObject.CompareTag("Player"))
         {
             fCheck = true;
@@ -48,6 +50,7 @@ public class FourthDoor : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        FTusu.SetActive(false);
         if (collision.gameObject.CompareTag("Player"))
         {
             fCheck = false;

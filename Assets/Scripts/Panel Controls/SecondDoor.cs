@@ -8,11 +8,13 @@ public class SecondDoor : MonoBehaviour
     public GameObject lav;
     bool fCheck, switchControl;
     public static bool blueElavator;
+    [SerializeField] GameObject FTusu;
 
     // Start is called before the first frame update
     void Start()
     {
         blueElavator = false;
+        FTusu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -43,6 +45,7 @@ public class SecondDoor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        FTusu.SetActive(true);
         if (collision.gameObject.CompareTag("Player"))
         {
             fCheck = true;
@@ -51,6 +54,7 @@ public class SecondDoor : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        FTusu.SetActive(true);
         if (collision.gameObject.CompareTag("Player"))
         {
             fCheck = false;

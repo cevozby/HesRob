@@ -382,9 +382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &136354073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,9 +533,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &144616397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,9 +684,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &171723863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,9 +983,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &344608597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,9 +1134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &382901838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1285,9 +1285,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &418286963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1705,9 +1705,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &574685610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,9 +2060,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &720624271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2362,9 +2362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &750928213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2730,9 +2730,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &889849548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2881,9 +2881,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &911643028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3135,9 +3135,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &1040287202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3286,9 +3286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &1059058474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3707,9 +3707,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &1315973644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3858,9 +3858,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &1319673237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4103,11 +4103,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f714780dbef937d469a5c1b9539aafcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoScreen: {fileID: 0}
+  infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 870095653}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!1 &1460398624
 GameObject:
   m_ObjectHideFlags: 0
@@ -4297,9 +4297,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
-  skor: {fileID: 0}
-  finishTime: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!114 &1540942886
 MonoBehaviour:
   m_ObjectHideFlags: 0

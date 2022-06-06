@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ElavatorControl : MonoBehaviour
 {
     Vector3 startPos;
     [SerializeField] Vector3 endPos;
+    [SerializeField] GameObject FTusu;
     public Transform player;
 
     bool fControl;
@@ -14,6 +16,7 @@ public class ElavatorControl : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
+        FTusu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,6 +29,7 @@ public class ElavatorControl : MonoBehaviour
     {
         if(fControl && Input.GetKeyDown(KeyCode.F))
         {
+
             if(transform.position == startPos)
             {
                 transform.position = endPos;
@@ -43,6 +47,7 @@ public class ElavatorControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        FTusu.SetActive(true);
         if (collision.gameObject.CompareTag("Player"))
         {
             fControl = true;
@@ -51,6 +56,7 @@ public class ElavatorControl : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        FTusu.SetActive(false);
         if (collision.gameObject.CompareTag("Player"))
         {
             fControl = false;
