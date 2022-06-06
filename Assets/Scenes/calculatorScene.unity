@@ -383,6 +383,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &136354073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,6 +534,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &144616397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,6 +685,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &171723863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,6 +984,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &344608597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1127,6 +1135,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &382901838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,6 +1286,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &418286963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1694,6 +1706,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &574685610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,6 +2061,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &720624271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2196,6 +2212,8 @@ MonoBehaviour:
   infoScreen: {fileID: 0}
   calculatorScreen: {fileID: 0}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &733193352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2345,6 +2363,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &750928213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2711,6 +2731,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &889849548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2860,6 +2882,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &911643028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2964,6 +2988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 929491236}
   - component: {fileID: 929491235}
+  - component: {fileID: 929491237}
   m_Layer: 0
   m_Name: "Hesap_makinas\u0131_3"
   m_TagString: Untagged
@@ -3039,6 +3064,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &929491237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929491234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f714780dbef937d469a5c1b9539aafcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoScreen: {fileID: 1455699262}
+  calculatorScreen: {fileID: 795057796}
+  finish: {fileID: 870095653}
+  skor: {fileID: 1460398626}
+  finishTime: {fileID: 1131118266}
 --- !u!1 &1040287199
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3136,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &1040287202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3243,6 +3287,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &1059058474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3404,8 +3450,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281069560
-  m_fontColor: {r: 0.9716981, g: 0.9378081, b: 0.16958882, a: 1}
+    rgba: 4280090111
+  m_fontColor: {r: 1, g: 0.99215686, b: 0.10980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3662,6 +3708,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &1315973644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3811,6 +3859,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &1319673237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3941,7 +3991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -259.66, y: 195.36}
+  m_AnchoredPosition: {x: -259.67, y: 207}
   m_SizeDelta: {x: 475.55, y: 59.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455699262
@@ -3991,8 +4041,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4055,7 +4105,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoScreen: {fileID: 0}
   calculatorScreen: {fileID: 795057796}
-  finish: {fileID: 0}
+  finish: {fileID: 870095653}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!1 &1460398624
 GameObject:
   m_ObjectHideFlags: 0
@@ -4123,8 +4175,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280090111
+  m_fontColor: {r: 1, g: 0.99215686, b: 0.10980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4246,6 +4298,8 @@ MonoBehaviour:
   infoScreen: {fileID: 1455699262}
   calculatorScreen: {fileID: 795057796}
   finish: {fileID: 0}
+  skor: {fileID: 0}
+  finishTime: {fileID: 0}
 --- !u!114 &1540942886
 MonoBehaviour:
   m_ObjectHideFlags: 0

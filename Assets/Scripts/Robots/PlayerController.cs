@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D playerRB;
     Animator playerAnim;
     SpriteRenderer playerSR;
+    public static double timer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
     }
 
     void CharacterMovement()

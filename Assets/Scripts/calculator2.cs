@@ -23,6 +23,9 @@ public class calculator2 : MonoBehaviour
     [SerializeField] TextMeshProUGUI infoScreen;
     [SerializeField] TextMeshProUGUI calculatorScreen; //iþlemi ve sonucu yazacaðýmýz yer
     [SerializeField] GameObject finish;
+    [SerializeField] TextMeshProUGUI skor;
+    [SerializeField] TextMeshProUGUI finishTime;
+    int finishingTime = 0;
 
     static Boolean written = false; //first second veya third entry için rakam girilmiþse written true olacak
                              // + - * / ya basýnca tekrar sayý giriþi olmasý gerektiði için false a dönecek
@@ -426,6 +429,7 @@ public class calculator2 : MonoBehaviour
 
             if (wantedResult.Equals(firstEntry))
             {
+                finish.SetActive(true);
                 infoScreen.text = "Ýþlemin doðru! Skor: "+ hesapSkoru;
                 
                 firstEntry = 0; 
@@ -436,14 +440,17 @@ public class calculator2 : MonoBehaviour
                 thirdOperation = "";
                 enteredNumber = 1;
                 silme();
-                finish.SetActive(true);
+                
+                skor.text = "Skor: " + hesapSkoru;
+                finishTime.text = "Süre: "+PlayerController.timer+" saniye";
+                hesapSkoru = 0;
 
 
 
             }
             else
             {
-                infoScreen.text = "Bulduðun sonuç "+firstEntry+". Tekrar dene!";
+                infoScreen.text = "Bulduðun sonuç "+firstEntry+". "+wantedResult+" sonucunu bulmak için tekrar dene!";
                 
                 firstEntry = 0; 
                 secondEntry = 0;
