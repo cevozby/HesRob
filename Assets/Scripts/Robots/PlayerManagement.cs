@@ -10,6 +10,7 @@ public class PlayerManagement : MonoBehaviour
     float health;
 
     [SerializeField] GameObject gameOver;
+    [SerializeField] GameObject pause;
     public Slider healthBar;
 
     // Start is called before the first frame update
@@ -19,6 +20,7 @@ public class PlayerManagement : MonoBehaviour
         healthBar.minValue = 0;
         healthBar.maxValue = health;
         healthBar.value = health;
+        pause.SetActive(true);
     }
 
     // Update is called once per frame

@@ -53,11 +53,7 @@ public class EnemyMovement : MonoBehaviour
                 new Vector3(minX, transform.position.y, transform.position.z), Time.deltaTime * speed);
         }
 
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-            Debug.Log("öldüm");
-        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -65,13 +61,13 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             health -= 30;
-            Debug.Log("Hasar verdin");
+            
             Destroy(collision.gameObject);
 
             if (health <= 0)
             {
                 Destroy(gameObject);
-                Debug.Log("öldüm");
+                
             }
 
 

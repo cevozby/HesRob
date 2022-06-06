@@ -7112,7 +7112,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 658.7903, y: 472}
+  m_AnchoredPosition: {x: 599, y: 472}
   m_SizeDelta: {x: 342.4196, y: 51.8259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1516439499
@@ -9596,6 +9596,10 @@ PrefabInstance:
       propertyPath: muzzle
       value: 
       objectReference: {fileID: 1405101910}
+    - target: {fileID: 3078357642415290838, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 686285007}
     - target: {fileID: 3078357642415290838, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
       propertyPath: gameOver
       value: 
