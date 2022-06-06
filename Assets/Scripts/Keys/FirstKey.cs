@@ -48,7 +48,7 @@ public class FirstKey : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player") && !keyControl)
+        if(collision.gameObject.CompareTag("Player") && !Anahtar.anahtarCheck)
         {
             FTusu.SetActive(true);
             fCheck = true;
