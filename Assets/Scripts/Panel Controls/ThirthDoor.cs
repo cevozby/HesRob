@@ -11,7 +11,7 @@ public class ThirthDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        whiteDoorCheck = false;
     }
 
     // Update is called once per frame
@@ -25,6 +25,7 @@ public class ThirthDoor : MonoBehaviour
         if (fCheck && Input.GetKeyDown(KeyCode.F))
         {
             switchPanel.SetActive(true);
+            whiteDoorCheck = true;
             fCheck = false;
         }
     }

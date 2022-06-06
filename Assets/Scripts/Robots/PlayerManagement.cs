@@ -7,7 +7,7 @@ using TMPro;
 public class PlayerManagement : MonoBehaviour
 {
     Robot player = new Robot(100, 10, 15);
-
+    int health;
 
     [SerializeField] GameObject gameOver;
     public Slider healthBar;
@@ -15,17 +15,16 @@ public class PlayerManagement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        health = player.Health;
         healthBar.minValue = 0;
-        healthBar.maxValue = player.Health;
-        healthBar.value = player.Health;
-        Debug.Log(player.Health);
-        Debug.Log(player.DamageGenerate());
+        healthBar.maxValue = health;
+        healthBar.value = health;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player.Health == 0)
+        if (health == 0)
         {
             gameOver.SetActive(true);
         }
@@ -43,6 +42,11 @@ public class PlayerManagement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("bigDamage")) 
         { player.Health = player.Health- 10; }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            health -= 15;
+        }
     }
 
     

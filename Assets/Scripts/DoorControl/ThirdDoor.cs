@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThirdDoor : MonoBehaviour
 {
     public GameObject door;
-    bool fCheck;
+    bool fCheck, doorOpen;
     public static bool thirdLevelCheck;
 
     // Start is called before the first frame update
@@ -19,13 +19,17 @@ public class ThirdDoor : MonoBehaviour
     void Update()
     {
         OpenDoor();
+        if (doorOpen)
+        {
+            StartCoroutine(DoorMovement());
+        }
     }
 
     void OpenDoor()
     {
         if (fCheck && FirstKey.keyControl && Input.GetKeyDown(KeyCode.F))
         {
-            StartCoroutine(DoorMovement());
+            doorOpen = true;
             thirdLevelCheck = true;
         }
     }
@@ -48,7 +52,7 @@ public class ThirdDoor : MonoBehaviour
 
     IEnumerator DoorMovement()
     {
-        door.transform.Translate(Vector3.up * Time.deltaTime * 1.15f);
+        door.transform.Translate(Vector3.up * Time.deltaTime * 5f);
         yield return new WaitForSeconds(3.5f);
         door.SetActive(false);
     }

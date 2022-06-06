@@ -32,7 +32,7 @@ public class WhiteDoor : MonoBehaviour
 
     IEnumerator DoorMovement()
     {
-        door.transform.Translate(Vector3.up * Time.deltaTime * -1.15f);
+        door.transform.Translate(Vector3.up * Time.deltaTime * -5f);
         yield return new WaitForSeconds(3.5f);
         door.SetActive(false);
     }

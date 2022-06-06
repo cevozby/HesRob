@@ -6,6 +6,10 @@ TagManager:
   tags:
   - smallDamage
   - bigDamage
+  - charger
+  - areaDamage
+  - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX

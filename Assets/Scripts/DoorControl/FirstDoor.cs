@@ -5,27 +5,34 @@ using UnityEngine;
 public class FirstDoor : MonoBehaviour
 {
     public GameObject door;
-    bool fCheck;
+    bool fCheck, doorOpen;
     public static bool firstLevelCheck;
+    [SerializeField] float speed;
 
     // Start is called before the first frame update
     void Start()
     {
         fCheck = false;
+        doorOpen = false;
         firstLevelCheck = false;
+        speed = 1.15f;
     }
 
     // Update is called once per frame
     void Update()
     {
         OpenDoor();
+        if (doorOpen)
+        {
+            StartCoroutine(DoorMovement());
+        }
     }
 
     void OpenDoor()
     {
         if(fCheck && FirstKey.keyControl && Input.GetKeyDown(KeyCode.F))
         {
-            StartCoroutine(DoorMovement());
+            doorOpen = true;
             firstLevelCheck = true;
         }
     }
@@ -48,7 +55,7 @@ public class FirstDoor : MonoBehaviour
 
     IEnumerator DoorMovement()
     {
-        door.transform.Translate(Vector3.up * Time.deltaTime * 1.15f);
+        door.transform.Translate(Vector3.up * Time.deltaTime * speed);
         yield return new WaitForSeconds(3.5f);
         door.SetActive(false);
     }
