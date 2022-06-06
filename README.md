@@ -100,4 +100,41 @@ Oyunun tam oturmaması. Bunun için daha çok toplantı ile halledilmesi gerekiy
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır:
+**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 3 Daily Scrum Chats](https://github.com/cevozby/HesRob/blob/main/sprint3/Daily%20Scrum%203.docx)
+
+**Sprint board update:** Sprint board screenshotları: ![](https://github.com/cevozby/HesRob/blob/main/sprint3/board1.jpg)  ![](https://github.com/cevozby/HesRob/blob/main/sprint3/board2.jpg)
+
+**Ürün Durumu:** Ekran görüntüleri:  
+![](https://github.com/cevozby/HesRob/blob/main/sprint3/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-06-05%20at%2010.59.57.jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint3/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-06-05%20at%2011.32.18%20(1).jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint3/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-06-05%20at%2011.32.18.jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint3/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-06-05%20at%2011.32.19%20(1).jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint3/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-06-05%20at%2011.32.19%20(2).jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint3/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-06-05%20at%2011.32.19%20(3).jpeg)
+![](https://github.com/cevozby/HesRob/blob/main/sprint3/%C3%BCr%C3%BCn%20fotograflar%C4%B1/WhatsApp%20Image%202022-06-05%20at%2011.32.19.jpeg)
+
+**Sprint Review:** Sprint hedeflerine ulaşılmıştır. <br/>
+
+*Alınan Kararlar :* <br/>
+
+Karakterin kişiselleştirilmesi iptal edilmiştir. <br/>
+
+*Sprint Review katılımcıları:* Yasemin Tavacıoğlu, Süleyman Cevdet Özbey, Beril Bilici, Müberra Yeşilyurt.
+
+**Sprint Retrospective:**
+
+<br/> *Neler İyi Gitti?:* <br/> 
+
+Daha verimli çalışıldı. <br/> 
+
+Hedeflere ulaşıldı <br/> 
+
+*Ne Tür Sorunlar Yaşadık?:* <br/> 
+
+Diğer işlerden dolayı projeyi yaparken sıkışıklık oldu <br/>
+
+*Geliştirilmesi veya sonraki sprintlerde dikkat edilmesi gereken konular neler?:* <br/>
+
+Projede yapılacak işlerin daha ayrıntılı ayrılması. <br/>
+
+Eksikliklerin daha erken fark edilmesi için daha fazla iletişimde kalmak. <br/> 
