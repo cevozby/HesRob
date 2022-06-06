@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     Animator playerAnim;
     SpriteRenderer playerSR;
     public static double timer = 0;
+    public static bool left;
 
 
     // Start is called before the first frame update
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
         playerAnim = GetComponent<Animator>();
         playerSR = GetComponent<SpriteRenderer>();
         timer = 0;
+        left = false;
     }
 
     private void FixedUpdate()
@@ -39,12 +41,14 @@ public class PlayerController : MonoBehaviour
             playerRB.velocity = Vector2.right * speed;
             playerSR.flipX = false;
             playerAnim.SetFloat("Speed", speed);
+            left = false;
         }
         else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             playerRB.velocity = Vector2.left * speed;
             playerSR.flipX = true;
             playerAnim.SetFloat("Speed", speed);
+            left = true;
         }
        /* else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
@@ -59,6 +63,7 @@ public class PlayerController : MonoBehaviour
             playerRB.velocity = Vector2.zero;
             playerAnim.SetFloat("Speed", 0);
             playerSR.flipX = false;
+            left = false;
             
         }
     }

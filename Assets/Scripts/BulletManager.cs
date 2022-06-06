@@ -6,31 +6,60 @@ public class BulletManager : MonoBehaviour
 {
     
     public Transform muzzle;
+    public Transform leftMuzzle;
     public GameObject bullet;
+    float timeCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        timeCount = 1f;
+        //StartCoroutine(BulletCreate());
     }
 
     // Update is called once per frame
     void Update()
     {
-        Target();
+        if(timeCount >= -1f)
+        {
+            timeCount -= Time.deltaTime;
+        }
+        
+        if (timeCount <=0f)
+        {
+            Target();
+            
+            
+        }
+        
+        
     }
 
     void Target()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            StartCoroutine(BulletCreate());
+            if(!PlayerController.left)
+            {
+                Instantiate(bullet, muzzle.position, Quaternion.identity);
+            }    
+            else if (PlayerController.left)
+            {
+                Instantiate(bullet, leftMuzzle.position, Quaternion.identity);
+            }
+            if (timeCount <= 0f)
+            {
+                timeCount = 1f;
+            }
         }
+        
     }
 
     IEnumerator BulletCreate()
     {
-        Instantiate(bullet, muzzle.position, Quaternion.identity);
+        
+        
+
         yield return new WaitForSeconds(1f);
     }
 
