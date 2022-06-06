@@ -135,6 +135,6 @@ Diğer işlerden dolayı projeyi yaparken sıkışıklık oldu <br/>
 
 *Geliştirilmesi veya sonraki sprintlerde dikkat edilmesi gereken konular neler?:* <br/>
 
-Projede yapılacak işlerin daha ayrıntılı ayrılması. <br/>
+Projede yapılacak işlerin daha ayrıntılı ayarlanması. <br/>
 
 Eksikliklerin daha erken fark edilmesi için daha fazla iletişimde kalmak. <br/> 
