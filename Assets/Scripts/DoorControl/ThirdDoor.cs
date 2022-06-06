@@ -2,30 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThirthDoor : MonoBehaviour
+public class ThirdDoor : MonoBehaviour
 {
-    public GameObject switchPanel;
+    public GameObject door;
     bool fCheck;
-    public static bool whiteDoorCheck;
+    public static bool thirdLevelCheck;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        fCheck = false;
+        thirdLevelCheck = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Kontrol();
+        OpenDoor();
     }
 
-    void Kontrol()
+    void OpenDoor()
     {
-        if (fCheck && Input.GetKeyDown(KeyCode.F))
+        if (fCheck && FirstKey.keyControl && Input.GetKeyDown(KeyCode.F))
         {
-            switchPanel.SetActive(true);
-            fCheck = false;
+            StartCoroutine(DoorMovement());
+            thirdLevelCheck = true;
         }
     }
 
@@ -43,5 +44,12 @@ public class ThirthDoor : MonoBehaviour
         {
             fCheck = false;
         }
+    }
+
+    IEnumerator DoorMovement()
+    {
+        door.transform.Translate(Vector3.up * Time.deltaTime * 1.15f);
+        yield return new WaitForSeconds(3.5f);
+        door.SetActive(false);
     }
 }
