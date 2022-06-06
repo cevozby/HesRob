@@ -74,7 +74,7 @@ public class PlayerManagement : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            health -= 0.2f;
+            health -= 0.4f;
             Debug.Log("Hasar alındı");
         }
 
