@@ -50,6 +50,7 @@ public class ButtonManager : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("GameLevels");
+        Time.timeScale = 1f;
     }
 
     
