@@ -11,12 +11,14 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer playerSR;
     public static double timer = 0;
 
+
     // Start is called before the first frame update
     void Start()
     {
         playerRB = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
         playerSR = GetComponent<SpriteRenderer>();
+
     }
 
     private void FixedUpdate()

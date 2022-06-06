@@ -14,8 +14,7 @@ public class ButtonManager : MonoBehaviour
     {
 
         index = SceneManager.GetActiveScene().buildIndex;
-        pauseMenu.SetActive(false);
-        gameOver.SetActive(false);
+        
         
     }
 

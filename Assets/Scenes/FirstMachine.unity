@@ -9569,6 +9569,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 2140317220}
+    - target: {fileID: 3078357642415290838, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 862675431}
     - target: {fileID: 3078357642415290839, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
       propertyPath: m_RootOrder
       value: 1
