@@ -9549,6 +9549,10 @@ PrefabInstance:
       propertyPath: muzzle
       value: 
       objectReference: {fileID: 1405101910}
+    - target: {fileID: 3078357642415290833, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3078357642415290837, guid: 95233e621f18c7c479964c66e75ebdd5, type: 3}
       propertyPath: m_Mass
       value: 1000
