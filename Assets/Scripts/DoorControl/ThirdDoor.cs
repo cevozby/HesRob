@@ -7,12 +7,14 @@ public class ThirdDoor : MonoBehaviour
     public GameObject door;
     bool fCheck, doorOpen;
     public static bool thirdLevelCheck;
+    [SerializeField] GameObject FTusu;
 
     // Start is called before the first frame update
     void Start()
     {
         fCheck = false;
         thirdLevelCheck = false;
+        FTusu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class ThirdDoor : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            FTusu.SetActive(true);
             fCheck = true;
         }
     }
@@ -46,6 +49,7 @@ public class ThirdDoor : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            FTusu.SetActive(false);
             fCheck = false;
         }
     }

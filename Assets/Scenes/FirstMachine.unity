@@ -6309,6 +6309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1938542346}
+  FTusu: {fileID: 1516439497}
 --- !u!1 &1360383676
 GameObject:
   m_ObjectHideFlags: 0
@@ -6630,6 +6631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1276605116}
+  FTusu: {fileID: 1516439497}
 --- !u!1 &1391918740
 GameObject:
   m_ObjectHideFlags: 0
@@ -9300,6 +9302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 500309826}
   speed: 5
+  FTusu: {fileID: 1516439497}
 --- !u!1 &2106599237
 GameObject:
   m_ObjectHideFlags: 0

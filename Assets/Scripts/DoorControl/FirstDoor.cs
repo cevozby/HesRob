@@ -8,6 +8,7 @@ public class FirstDoor : MonoBehaviour
     bool fCheck, doorOpen;
     public static bool firstLevelCheck;
     [SerializeField] float speed;
+    [SerializeField] GameObject FTusu;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class FirstDoor : MonoBehaviour
         doorOpen = false;
         firstLevelCheck = false;
         speed = 1.15f;
+        FTusu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,6 +43,7 @@ public class FirstDoor : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            FTusu.SetActive(true);
             fCheck = true;
         }
     }
@@ -49,6 +52,7 @@ public class FirstDoor : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            FTusu.SetActive(false);
             fCheck = false;
         }
     }
