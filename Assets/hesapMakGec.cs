@@ -11,7 +11,7 @@ public class hesapMakGec : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("calculator2");
+            SceneManager.LoadScene("calculatorScene");
         }
     }
 }

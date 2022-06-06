@@ -51,7 +51,7 @@ public class PlayerManagement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("areaDamage"))
-        { health = player.Health - 0.4f; }
+        { health = 0; }
         if (collision.gameObject.CompareTag("charger"))
         { health = player.Health + 2f; }
 
@@ -66,7 +66,7 @@ public class PlayerManagement : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("areaDamage"))
-        { health = player.Health - 0.4f; }
+        { health = 0; }
         if (collision.gameObject.CompareTag("charger"))
         { health = player.Health + 2f; }
 
