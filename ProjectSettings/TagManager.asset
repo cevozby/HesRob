@@ -6,6 +6,10 @@ TagManager:
   tags:
   - smallDamage
   - bigDamage
+  - charger
+  - areaDamage
+  - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -42,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: back
+    uniqueID: 2949608419
     locked: 0

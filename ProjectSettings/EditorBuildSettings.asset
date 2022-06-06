@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Giris.unity
+    guid: a4dce3cdcaf524b2c88df5305bcb084d
+  - enabled: 1
+    path: Assets/Scenes/GameLevels.unity
+    guid: 835498879e7b04b23aa75659fd75a139
+  - enabled: 1
+    path: Assets/Scenes/FirstMachine.unity
+    guid: 5d297daa3118bc24abaff82a099f96d3
+  - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/calculatorScene.unity
+    guid: d04fc1f11a906b94b881833235224da2
   m_configObjects: {}
