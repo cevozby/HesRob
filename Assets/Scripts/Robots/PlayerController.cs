@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
         playerRB = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
         playerSR = GetComponent<SpriteRenderer>();
-
+        timer = 0;
     }
 
     private void FixedUpdate()

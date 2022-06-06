@@ -25,7 +25,7 @@ public class calculator2 : MonoBehaviour
     [SerializeField] GameObject finish;
     [SerializeField] TextMeshProUGUI skor;
     [SerializeField] TextMeshProUGUI finishTime;
-    int finishingTime = 0;
+    
 
     static Boolean written = false; //first second veya third entry için rakam girilmiþse written true olacak
                              // + - * / ya basýnca tekrar sayý giriþi olmasý gerektiði için false a dönecek
@@ -34,6 +34,14 @@ public class calculator2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        firstEntry = 0; 
+        secondEntry = 0;
+        thirdEntry = 0;
+        firstOperation = "";
+        secondOperation = "";
+        thirdOperation = "";
+        enteredNumber = 1;
+
         wantedResult = rnd.Next(1,20); //her seviyede 1 ile 20 arasý rastgele bir sayýyý bulmamýzý isteyecek
         infoScreen.text = "Sonucu "+ wantedResult+" olan bir iþlem yap!";
         calculatorScreen.text = "";
