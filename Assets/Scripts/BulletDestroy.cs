@@ -16,7 +16,7 @@ public class BulletDestroy : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Hasar verdin");
+            Debug.Log("Hasar bullet");
             Destroy(gameObject);
 
 

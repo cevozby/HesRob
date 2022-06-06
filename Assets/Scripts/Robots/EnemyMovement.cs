@@ -60,15 +60,21 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             health -= 30;
             Debug.Log("Hasar verdin");
             Destroy(collision.gameObject);
-            
-            
+
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+                Debug.Log("öldüm");
+            }
+
+
         }
     }
 
