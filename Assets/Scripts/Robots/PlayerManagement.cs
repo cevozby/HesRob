@@ -34,7 +34,7 @@ public class PlayerManagement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("smallDamage")) 
         {
-            Debug.Log("Hasar ALındı");
+            Debug.Log("Hasar Alındı");
             player.Health = player.Health- 5;
             healthBar.value = player.Health;
             Debug.Log("Can: " + player.Health);
@@ -43,10 +43,7 @@ public class PlayerManagement : MonoBehaviour
         if (collision.gameObject.CompareTag("bigDamage")) 
         { player.Health = player.Health- 10; }
 
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            health -= 15;
-        }
+        
     }
 
     
@@ -56,6 +53,12 @@ public class PlayerManagement : MonoBehaviour
         { player.Health = player.Health - 2; }
         if (collision.gameObject.CompareTag("charger")) 
         { player.Health = player.Health + 8; }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            health -= 15;
+            Debug.Log("Hasar alındı");
+        }
     }
     //Burada lav gibi bir şey olursa dokunduğu sürece can kaybedebilir.
     //Tekrar can toplasın diye şarj olduğu yerler eklenebilir diye düşündüm.

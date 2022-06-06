@@ -7,6 +7,7 @@ public class BlueElevator : MonoBehaviour
     Vector3 startPos;
     [SerializeField] Vector3 endPos;
     public Transform player;
+    [SerializeField] GameObject FTusu;
 
     bool fControl;
 
@@ -14,6 +15,7 @@ public class BlueElevator : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
+        FTusu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -43,8 +45,10 @@ public class BlueElevator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.gameObject.CompareTag("Player") && SecondDoor.blueElavator)
         {
+            FTusu.SetActive(true);
             fControl = true;
         }
     }
@@ -53,6 +57,7 @@ public class BlueElevator : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            FTusu.SetActive(false);
             fControl = false;
         }
     }
