@@ -27,6 +27,7 @@ public class ButtonManager : MonoBehaviour
     public void RestartButton()
     {
         SceneManager.LoadScene(index);
+        Time.timeScale = 1;
     }
 
     public void QuitButton()
